@@ -9,9 +9,8 @@ def text_to_image(prompt=str):
     print(f"Converting text to image with prompt: {prompt}")
     API_KEY = os.getenv("SLAB_API_KEY") # API KEY จาก SERVER AI ให้เรา
     #print(f"API_KEY: {API_KEY}")
-
     url = "https://modelslab.com/api/v6/images/text2img" # URL สำหรับเรียก API SERVER AI ให้เรา
-    # ข้อมูล prompt ข้อความที่จะให้สร้าง จากไฟล์ .csv
+    # ข้อมูล prompt ข้อความที่จะให้สร้าง จากไฟล์ .csv แต่ละ AI จะไม่เหมือนกันห
     data = {
         "key": API_KEY,
         "model_id": "flux",
