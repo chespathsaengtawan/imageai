@@ -5,6 +5,8 @@ env/
 __pycache__/
 *.pyc
 
+.env
+
 .idea/
 .vscode/
 *.sublime-project
